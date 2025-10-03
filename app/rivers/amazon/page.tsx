@@ -44,7 +44,7 @@ export default function AmazonPage() {
           />
         </video>
 
-               {/* overlay */}
+        {/* overlay */}
         <div className="absolute inset-0 bg-black/40"></div>
 
         <div className="relative text-center text-white px-4">
@@ -59,25 +59,12 @@ export default function AmazonPage() {
                 transform: showDescription ? "translateX(0)" : "translateX(-50px)",
               }}
             >
-
               Stretching over 6,400 km, the Amazon carries more water than any other river on Earth and drains the
               world's largest rainforest. It provides about 20% of the planet's freshwater outflow and sustains
               unmatched biodiversity. More than 30 million people, including Indigenous communities, rely on it for
               food, transport, and culture.
             </p>
           </div>
-        </div>
-      </section>
-
-      <section className="container mx-auto max-w-7xl px-6 py-4">
-        <div className="w-full lg:w-1/2 mx-auto">
-          <audio controls className="w-full rounded-lg">
-            <source
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_MSQncApIxGTAKdjDXP55fnhUitOs/GSJNTg8oCwkfxvdj_a9rnk/public/audio/amazon/audio.mp3"
-              type="audio/mpeg"
-            />
-            Your browser does not support the audio element.
-          </audio>
         </div>
       </section>
 

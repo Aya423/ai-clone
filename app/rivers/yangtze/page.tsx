@@ -71,7 +71,12 @@ export default function NilePage() {
             }}
           >
             <p className="text-lg md:text-xl leading-relaxed drop-shadow-lg font-light">
-              Stretching for about 6,300 km, the Yangtze is the longest river in Asia and the third longest in the world. Flowing entirely within China, it begins on the Tibetan Plateau and winds eastward through diverse landscapes before emptying into the East China Sea near Shanghai.For thousands of years, the Yangtze has nourished civilizations, serving as a vital route for transport, agriculture, and trade. Today, it remains central to China’s economy and culture, but faces increasing pressures from industrialization, dams, pollution, and climate change.
+              Stretching for about 6,300 km, the Yangtze is the longest river in Asia and the third longest in the
+              world. Flowing entirely within China, it begins on the Tibetan Plateau and winds eastward through diverse
+              landscapes before emptying into the East China Sea near Shanghai.For thousands of years, the Yangtze has
+              nourished civilizations, serving as a vital route for transport, agriculture, and trade. Today, it remains
+              central to China’s economy and culture, but faces increasing pressures from industrialization, dams,
+              pollution, and climate change.
             </p>
           </div>
         </div>
@@ -125,14 +130,6 @@ export default function NilePage() {
               Your browser does not support the video tag.
             </video>
           </div>
-        </div>
-
-        {/* صندوق الصوت */}
-        <div className="mt-6 w-full lg:w-1/2 mx-auto">
-          <audio controls className="w-full rounded-lg">
-            <source src="/amazon-audio.mp3" type="audio/mpeg" />
-            Your browser does not support the audio element.
-          </audio>
         </div>
 
         <div className="flex flex-col items-center mt-12">
@@ -203,15 +200,10 @@ export default function NilePage() {
           </div>
         </div>
 
-        {/* صندوق الصوت */}
-        <div className="mt-6 w-full lg:w-1/2 mx-auto">
-          <audio controls className="w-full rounded-lg">
-            <source src="/amazon-audio.mp3" type="audio/mpeg" />
-            Your browser does not support the audio element.
-          </audio>
+        <div className="flex flex-col items-center mt-12">
+          {/* الخط */}
+          <div className="w-full border-t-2 border-gray-300"></div>
         </div>
-
-        <div className="mt-8 w-full border-t-2 border-gray-300"></div>
       </section>
 
       <section className="container mx-auto max-w-7xl px-6 py-16">

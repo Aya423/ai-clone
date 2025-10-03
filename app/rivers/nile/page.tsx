@@ -45,9 +45,7 @@ export default function NilePage() {
           />
         </video>
 
-        
-
-                  {/* overlay */}
+        {/* overlay */}
         <div className="absolute inset-0 bg-black/40"></div>
 
         <div className="relative text-center text-white px-4">
@@ -62,26 +60,12 @@ export default function NilePage() {
                 transform: showDescription ? "translateX(0)" : "translateX(-50px)",
               }}
             >
-
-            <p className="text-lg md:text-xl leading-relaxed drop-shadow-lg font-light">
               Stretching for about 6,650 km, the Nile flows through 11 African countries and has been the cradle of
               ancient Egyptian civilization. It is the main source of freshwater for millions of people, supporting
               agriculture, transport, and daily life across northeastern Africa. Today, the Nile remains a lifeline, but
               faces growing stress from rising temperatures, population demands, and climate change.
             </p>
           </div>
-        </div>
-      </section>
-
-      <section className="container mx-auto max-w-7xl px-6 py-4">
-        <div className="w-full lg:w-1/2 mx-auto">
-          <audio controls className="w-full rounded-lg">
-            <source
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_MSQncApIxGTAKdjDXP55fnhUitOs/JrWYrgApnQyYS--Rwj269v/public/audio/nile/audio.mp3"
-              type="audio/mpeg"
-            />
-            Your browser does not support the audio element.
-          </audio>
         </div>
       </section>
 
