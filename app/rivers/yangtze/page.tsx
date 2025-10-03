@@ -71,10 +71,7 @@ export default function NilePage() {
             }}
           >
             <p className="text-lg md:text-xl leading-relaxed drop-shadow-lg font-light">
-              Stretching for about 6,650 km, the Nile flows through 11 African countries and has been the cradle of
-              ancient Egyptian civilization. It is the main source of freshwater for millions of people, supporting
-              agriculture, transport, and daily life across northeastern Africa. Today, the Nile remains a lifeline, but
-              faces growing stress from rising temperatures, population demands, and climate change.
+              Stretching for about 6,300 km, the Yangtze is the longest river in Asia and the third longest in the world. Flowing entirely within China, it begins on the Tibetan Plateau and winds eastward through diverse landscapes before emptying into the East China Sea near Shanghai.For thousands of years, the Yangtze has nourished civilizations, serving as a vital route for transport, agriculture, and trade. Today, it remains central to China’s economy and culture, but faces increasing pressures from industrialization, dams, pollution, and climate change.
             </p>
           </div>
         </div>
