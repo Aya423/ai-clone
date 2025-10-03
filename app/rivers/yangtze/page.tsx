@@ -59,8 +59,8 @@ export default function NilePage() {
         <div className="absolute inset-0 bg-black/40"></div>
 
         <div className="relative text-center text-white px-4">
-          <h1 className="font-serif text-5xl md:text-7xl font-bold drop-shadow-2xl">Nile River</h1>
-          <p className="text-xl md:text-2xl mt-4 drop-shadow-lg">The Longest River in the World</p>
+          <h1 className="font-serif text-5xl md:text-7xl font-bold drop-shadow-2xl">Yangtze River</h1>
+          <p className="text-xl md:text-2xl mt-4 drop-shadow-lg">The Longest River in Asia</p>
 
           <div
             className="mt-8 max-w-4xl mx-auto text-left"
