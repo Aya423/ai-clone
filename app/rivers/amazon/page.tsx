@@ -71,7 +71,7 @@ export default function AmazonPage() {
       <section className="container mx-auto max-w-7xl px-6 py-4">
         <div className="w-full lg:w-1/2 mx-auto">
           <audio controls className="w-full rounded-lg">
-            <source src="/audio/amazon-river.mp3" type="audio/mpeg" />
+            <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/amaz-JT2ElCmbIWNY9vVGBYKaukYLjMF49J.mp3" type="audio/mpeg" />
             Your browser does not support the audio element.
           </audio>
         </div>
