@@ -24,7 +24,7 @@ export default function YangtzePage() {
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-background via-background to-muted dark:from-gray-950 dark:via-gray-900 dark:to-gray-800">
+    <main className="min-h-screen bg-white">
       <div className="fixed top-0 left-0 z-50 p-6 flex items-center gap-4">
         <Link
           href="/"
@@ -52,33 +52,45 @@ export default function YangtzePage() {
           />
         </video>
 
-        <div className="absolute inset-0 bg-black/50"></div>
+        
+        {/* overlay */}
+        <div className="absolute inset-0 bg-black/40"></div>
 
-        <div className="relative text-center text-white px-4 max-w-5xl">
-          <h1 className="font-oswald text-5xl md:text-7xl font-bold drop-shadow-2xl uppercase">Yangtze River</h1>
-          <p className="text-xl md:text-2xl mt-4 drop-shadow-lg">The Longest River in Asia</p>
-          <p className="text-base md:text-lg mt-6 drop-shadow-lg leading-relaxed">
-            Stretching for about 6,300 km, the Yangtze is the longest river in Asia and the third longest in the world.
-            Flowing entirely within China, it begins on the Tibetan Plateau and winds eastward through diverse
-            landscapes before emptying into the East China Sea near Shanghai. For thousands of years, the Yangtze has
-            nourished civilizations, serving as a vital route for transport, agriculture, and trade. Today, it remains
-            central to China's economy and culture, but faces increasing pressures from industrialization, dams,
-            pollution, and climate change.
-          </p>
+        <div className="relative text-center text-white px-4">
+          <h1 className="font-serif text-5xl md:text-7xl font-bold drop-shadow-2xl">Nile River</h1>
+          <p className="text-xl md:text-2xl mt-4 drop-shadow-lg">The Longest River in the World</p>
+
+          <div
+            className="mt-8 max-w-4xl mx-auto text-left"
+            style={{
+              opacity: showDescription ? 1 : 0,
+              transform: showDescription ? "translateX(0)" : "translateX(-50px)",
+              transition: "all 0.8s cubic-bezier(0.4, 0, 0.2, 1)",
+            }}
+          >
+            <p className="text-lg md:text-xl leading-relaxed drop-shadow-lg font-light">
+              Stretching for about 6,650 km, the Nile flows through 11 African countries and has been the cradle of
+              ancient Egyptian civilization. It is the main source of freshwater for millions of people, supporting
+              agriculture, transport, and daily life across northeastern Africa. Today, the Nile remains a lifeline, but
+              faces growing stress from rising temperatures, population demands, and climate change.
+            </p>
+          </div>
         </div>
       </section>
-
       <section className="container mx-auto max-w-7xl px-6 py-4">
         <div className="w-full lg:w-1/2 mx-auto">
           <audio controls className="w-full rounded-lg">
-            <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_MSQncApIxGTAKdjDXP55fnhUitOs/r1qoDf5TRXiYvCokZLYl_o/public/audio/yangtze/audio.mp3" type="audio/mpeg" />
+            <source
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_MSQncApIxGTAKdjDXP55fnhUitOs/r1qoDf5TRXiYvCokZLYl_o/public/audio/yangtze/audio.mp3"
+              type="audio/mpeg"
+            />
             Your browser does not support the audio element.
           </audio>
         </div>
       </section>
 
       <section className="container mx-auto max-w-7xl px-6 py-16">
-        <h2 className="font-oswald text-5xl font-bold text-center mb-12 text-foreground uppercase">VEGETATION</h2>
+        <h2 className="font-oswald text-5xl font-bold text-center mb-12 text-gray-800 uppercase">VEGETATION</h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
           <div
@@ -119,12 +131,12 @@ export default function YangtzePage() {
         </div>
 
         <div className="flex flex-col items-center mt-12">
-          <div className="w-full border-t-2 border-gray-300 dark:border-gray-700"></div>
+          <div className="w-full border-t-2 border-gray-300"></div>
         </div>
       </section>
 
       <section className="container mx-auto max-w-7xl px-6 pb-16 pt-8">
-        <h2 className="font-oswald text-5xl font-bold text-center mb-12 text-foreground uppercase">FIRES</h2>
+        <h2 className="font-oswald text-5xl font-bold text-center mb-12 text-gray-800 uppercase">FIRES</h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
           <div className="border-8 border-yellow-400 rounded-lg shadow-xl p-2 bg-yellow-50 flex w-full overflow-hidden">
@@ -184,21 +196,19 @@ export default function YangtzePage() {
             onMouseEnter={() => setHoveredBox("waterLevels")}
             onMouseLeave={() => setHoveredBox(null)}
           >
-            <h3 className="font-oswald text-2xl font-bold text-gray-900 dark:text-white mb-4 uppercase">
-              Record Low Water Levels
-            </h3>
-            <p className="text-gray-900 dark:text-white font-merri leading-relaxed mb-4">
+            <h3 className="font-oswald text-2xl font-bold text-gray-800 mb-4 uppercase">Record Low Water Levels</h3>
+            <p className="text-gray-700 font-merri leading-relaxed mb-4">
               The Port of Manaus recorded a water level of 12.66 meters on October 4, 2024 - the lowest since records
               began in 1902. This severe drought is directly linked to deforestation and fires in the Amazon.
             </p>
-            <p className="text-gray-900 dark:text-white font-merri leading-relaxed">
+            <p className="text-gray-700 font-merri leading-relaxed">
               As trees are cut down, the forest loses its ability to generate rainfall. Less vegetation means less
               moisture, creating a dangerous cycle of drought and fire that threatens river transportation, communities,
               and wildlife throughout the region.
             </p>
           </div>
 
-          <div className="border-4 border-gray-300 dark:border-gray-600 rounded-lg shadow-xl p-4 bg-white dark:bg-gray-800">
+          <div className="border-4 border-gray-300 rounded-lg shadow-xl p-4 bg-white">
             <img
               src="/amazon-water-levels-graph.jpg"
               alt="Amazon River Water Levels Graph"
@@ -207,11 +217,11 @@ export default function YangtzePage() {
           </div>
         </div>
 
-        <div className="mt-8 w-full border-t-2 border-gray-300 dark:border-gray-700"></div>
+        <div className="mt-8 w-full border-t-2 border-gray-300"></div>
       </section>
 
       <section className="container mx-auto max-w-7xl px-6 py-16">
-        <h2 className="font-oswald text-5xl font-bold text-center mb-12 text-foreground -mt-8 uppercase">
+        <h2 className="font-oswald text-5xl font-bold text-center mb-12 text-gray-800 -mt-8 uppercase">
           HUMAN ACTIVITIES
         </h2>
 
