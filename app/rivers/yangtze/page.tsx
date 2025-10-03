@@ -76,7 +76,7 @@ export default function YangtzePage() {
             </p>
           </div>
         </div>
-      </section>
+
       <section className="container mx-auto max-w-7xl px-6 py-4">
         <div className="w-full lg:w-1/2 mx-auto">
           <audio controls className="w-full rounded-lg">
