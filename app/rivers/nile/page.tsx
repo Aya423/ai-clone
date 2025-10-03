@@ -196,7 +196,7 @@ export default function NilePage() {
           <div
             className="p-8 rounded-md flex flex-col w-full bg-cover bg-center relative overflow-hidden cursor-pointer"
             style={{
-              backgroundImage: "url('/drought-background.jpg')",
+              backgroundImage: "url('/images/dust-storm-nile.png')",
               transform:
                 hoveredBox === "From Sahara to the Nile" ? "translateZ(30px) scale(1.02)" : "translateZ(0) scale(1)",
               boxShadow:
