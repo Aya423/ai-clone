@@ -24,7 +24,7 @@ export default function AmazonPage() {
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-background via-background to-muted dark:from-gray-950 dark:via-gray-900 dark:to-gray-800">
+    <main className="min-h-screen bg-white dark:bg-gradient-to-b dark:from-gray-950 dark:via-gray-900 dark:to-gray-800">
       <LeftSidebar />
 
       <div className="fixed top-0 right-0 z-50 p-6">
@@ -68,20 +68,25 @@ export default function AmazonPage() {
       </section>
 
       <section className="container mx-auto max-w-7xl px-6 py-4">
-        <div className="w-full lg:w-1/2 mx-auto">
+        <div className="w-full lg:w-1/2 mx-auto bg-gray-200/50 dark:bg-transparent p-4 rounded-lg">
           <audio controls className="w-full rounded-lg">
-            <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_MSQncApIxGTAKdjDXP55fnhUitOs/GSJNTg8oCwkfxvdj_a9rnk/public/audio/amazon/audio.mp3" type="audio/mpeg" />
+            <source
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_MSQncApIxGTAKdjDXP55fnhUitOs/GSJNTg8oCwkfxvdj_a9rnk/public/audio/amazon/audio.mp3"
+              type="audio/mpeg"
+            />
             Your browser does not support the audio element.
           </audio>
         </div>
       </section>
 
       <section className="container mx-auto max-w-7xl px-6 py-16">
-        <h2 className="font-oswald text-5xl font-bold text-center mb-12 text-foreground uppercase">VEGETATION</h2>
+        <h2 className="font-oswald text-5xl font-bold text-center mb-12 text-black dark:text-foreground uppercase">
+          VEGETATION
+        </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
           <div
-            className="p-8 rounded-md flex flex-col w-full cursor-pointer relative overflow-hidden bg-gradient-to-br from-blue-100 to-green-100 dark:from-blue-900/30 dark:to-green-900/30"
+            className="p-8 rounded-md flex flex-col w-full cursor-pointer relative overflow-hidden bg-gray-200/60 dark:bg-gradient-to-br dark:from-blue-900/30 dark:to-green-900/30"
             style={{
               transform: hoveredBox === "vegetation" ? "translateZ(30px) scale(1.02)" : "translateZ(0) scale(1)",
               boxShadow:
@@ -123,7 +128,9 @@ export default function AmazonPage() {
       </section>
 
       <section className="container mx-auto max-w-7xl px-6 pb-16 pt-8">
-        <h2 className="font-oswald text-5xl font-bold text-center mb-12 text-foreground uppercase">FIRES</h2>
+        <h2 className="font-oswald text-5xl font-bold text-center mb-12 text-black dark:text-foreground uppercase">
+          FIRES
+        </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
           <div className="border-8 border-yellow-400 rounded-lg shadow-xl p-2 bg-yellow-50 flex w-full overflow-hidden">
@@ -151,14 +158,14 @@ export default function AmazonPage() {
             onMouseEnter={() => setHoveredBox("fires")}
             onMouseLeave={() => setHoveredBox(null)}
           >
-            <div className="absolute inset-0 bg-black/70"></div>
+            <div className="absolute inset-0 bg-gray-200/80 dark:bg-black/70"></div>
 
             <div className="relative z-10">
-              <p className="text-white font-merri tracking-wide leading-relaxed">
+              <p className="text-gray-900 dark:text-white font-merri tracking-wide leading-relaxed">
                 Fires can occur naturally or due to human activity, affecting forests, grasslands, and wildlife. In the
                 Amazon, fires caused by deforestation and land clearing destroy forest and threaten countless species.
               </p>
-              <p className="text-white font-merri mt-6 leading-relaxed">
+              <p className="text-gray-900 dark:text-white font-merri mt-6 leading-relaxed">
                 These fires also impact the Amazon River and its surrounding vegetation. Loss of forest cover reduces
                 the rainforest's ability to regulate rainfall, which can alter river flow and increase sediment in the
                 water. The weakened vegetation absorbs less carbon dioxide and disrupts the river ecosystem, affecting
@@ -170,7 +177,7 @@ export default function AmazonPage() {
 
         <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
           <div
-            className="p-8 rounded-md flex flex-col justify-center cursor-pointer relative overflow-hidden bg-gradient-to-br from-red-100 to-orange-100 dark:from-red-900/30 dark:to-orange-900/30"
+            className="p-8 rounded-md flex flex-col justify-center cursor-pointer relative overflow-hidden bg-gray-200/60 dark:bg-gradient-to-br dark:from-red-900/30 dark:to-orange-900/30"
             style={{
               transform: hoveredBox === "waterLevels" ? "translateZ(30px) scale(1.02)" : "translateZ(0) scale(1)",
               boxShadow:
@@ -183,7 +190,7 @@ export default function AmazonPage() {
             onMouseEnter={() => setHoveredBox("waterLevels")}
             onMouseLeave={() => setHoveredBox(null)}
           >
-            <h3 className="font-oswald text-2xl font-bold text-gray-900 dark:text-white mb-4 uppercase">
+            <h3 className="font-oswald text-2xl font-bold text-black dark:text-white mb-4 uppercase">
               Record Low Water Levels
             </h3>
             <p className="text-gray-900 dark:text-white font-merri leading-relaxed mb-4">
@@ -210,7 +217,7 @@ export default function AmazonPage() {
       </section>
 
       <section className="container mx-auto max-w-7xl px-6 py-16">
-        <h2 className="font-oswald text-5xl font-bold text-center mb-12 text-foreground -mt-8 uppercase">
+        <h2 className="font-oswald text-5xl font-bold text-center mb-12 text-black dark:text-foreground -mt-8 uppercase">
           HUMAN ACTIVITIES
         </h2>
 
@@ -234,14 +241,14 @@ export default function AmazonPage() {
             onMouseEnter={() => setHoveredBox("humanActivities")}
             onMouseLeave={() => setHoveredBox(null)}
           >
-            <div className="absolute inset-0 bg-black/70"></div>
+            <div className="absolute inset-0 bg-gray-200/80 dark:bg-black/70"></div>
 
             <div className="relative z-10">
-              <p className="text-white font-merri tracking-wide leading-relaxed">
+              <p className="text-gray-900 dark:text-white font-merri tracking-wide leading-relaxed">
                 Over the past two decades, human activities such as forest burning for agriculture and global greenhouse
                 gas emissions have increased atmospheric dryness over the Amazon.
               </p>
-              <p className="text-white font-merri mt-6 leading-relaxed">
+              <p className="text-gray-900 dark:text-white font-merri mt-6 leading-relaxed">
                 This reduces rainfall and soil moisture, weakening the forest's ability to supply water to the Amazon
                 River. Fires release aerosols like black carbon, which warm the atmosphere and disrupt cloud formation,
                 further decreasing river flow and affecting aquatic life and local communities.
