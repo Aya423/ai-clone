@@ -79,6 +79,8 @@ export default function NilePage() {
               pollution, and climate change.
             </p>
           </div>
+          
+</section>
 
           <section className="container mx-auto max-w-7xl px-6 py-4">
   <div className="w-full lg:w-1/2 mx-auto">
@@ -87,6 +89,7 @@ export default function NilePage() {
       Your browser does not support the audio element.
     </audio>
   </div>
+</section>
           </div>
         </div>
       </section>
