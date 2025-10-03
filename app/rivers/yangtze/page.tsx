@@ -5,7 +5,7 @@ import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
 import ImageComparisonSlider from "@/components/image-comparison-slider"
 
-export default function NilePage() {
+export default function YangtzePage() {
   const router = useRouter()
   const [hoveredBox, setHoveredBox] = useState<string | null>(null)
   const [showDescription, setShowDescription] = useState(false)
@@ -85,7 +85,10 @@ export default function NilePage() {
       <section className="container mx-auto max-w-7xl px-6 py-4">
         <div className="w-full lg:w-1/2 mx-auto">
           <audio controls className="w-full rounded-lg">
-            <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/yang-dsca9iu6C7GRVLiuvO3yWwNjfbbsgp.mp3" type="audio/mpeg" />
+            <source
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/yang-dsca9iu6C7GRVLiuvO3yWwNjfbbsgp.mp3"
+              type="audio/mpeg"
+            />
             Your browser does not support the audio element.
           </audio>
         </div>
@@ -93,54 +96,53 @@ export default function NilePage() {
 
       {/* النص + الفيديو */}
       <section className="container mx-auto max-w-7xl px-6 py-16">
-        <h2
-          className="text-5xl font-bold text-center mb-12 text-gray-800 uppercase tracking-wider"
-          style={{ fontFamily: "Oswald, sans-serif" }}
-        >
-          TEMPERATURE
+        <h2 className="font-oswald text-5xl font-bold text-center mb-12 text-gray-800 -mt-8 uppercase">
+          THE THREE GORGES DAM
         </h2>
 
-        {/* الأعمدة الكبيرة */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
-          {/* النص */}
           <div
-            className="bg-black/60 p-8 rounded-md flex flex-col w-full cursor-pointer"
+            className="p-8 rounded-md flex flex-col w-full bg-cover bg-center relative overflow-hidden cursor-pointer"
             style={{
-              transform: hoveredBox === "temperature" ? "translateZ(30px) scale(1.02)" : "translateZ(0) scale(1)",
+              backgroundImage: "url('/images/dust-storm-nile.png')",
+              transform:
+                hoveredBox === "From Sahara to the Nile" ? "translateZ(30px) scale(1.02)" : "translateZ(0) scale(1)",
               boxShadow:
-                hoveredBox === "temperature"
+                hoveredBox === "From Sahara to the Nile"
                   ? "0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1)"
                   : "0 10px 15px -3px rgba(0, 0, 0, 0.3)",
               transition: "all 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
               transformStyle: "preserve-3d",
             }}
-            onMouseEnter={() => setHoveredBox("temperature")}
+            onMouseEnter={() => setHoveredBox("From Sahara to the Nile")}
             onMouseLeave={() => setHoveredBox(null)}
           >
-            <p className="text-white font-merri tracking-wide leading-relaxed">
-              This global temperature map clearly shows that Africa stands out as the hottest continent on Earth.
-              Persistent high land surface temperatures increase evaporation rates and intensify drought conditions,
-              placing severe stress on freshwater resources.
-            </p>
-            <p className="text-white font-merri mt-6 leading-relaxed">
-              For the Nile, Africa's longest river and a lifeline for millions, rising heat reduces water flow, affects
-              agricultural productivity, and heightens the challenges of water management. As temperatures continue to
-              climb, the Nile becomes increasingly vulnerable, making its preservation more critical than ever.
-            </p>
+            <div className="absolute inset-0 bg-black/70"></div>
+
+            <div className="relative z-10">
+              <p className="text-white font-merri tracking-wide leading-relaxed">
+                In 2000, satellite images showed the Yangtze River still flowing freely, with the Three Gorges Dam only
+                partly built and construction sites visible on the banks.
+              </p>
+              <p className="text-white font-merri mt-6 leading-relaxed">
+                By 2006, just six years later, the dam was complete, spanning the entire river. A massive reservoir had
+                formed behind it, replacing the narrow river channel with a wide, calm lake. The comparison highlights
+                how quickly the dam transformed the Yangtze River and its surroundings.
+              </p>
+            </div>
           </div>
 
-          {/* الفيديو */}
-          <div className="border-8 border-yellow-400 rounded-lg shadow-xl p-2 bg-yellow-50 flex w-full">
-            <video className="w-full h-full rounded object-cover" autoPlay loop muted playsInline>
-              <source
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mod%20Lstd%20M-wNyUO8JKA883uQ2OVF1mUx97UwDhqk.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
+          <div className="border-8 border-yellow-400 rounded-lg shadow-xl p-2 bg-yellow-50 flex w-full min-h-[400px]">
+            <ImageComparisonSlider
+              beforeImage="/images/three-gorges-dam-2000.png"
+              afterImage="/images/three-gorges-dam-2006.png"
+              beforeAlt="Three Gorges Dam Area - July 2000 (During Construction)"
+              afterAlt="Three Gorges Dam Area - May 2006 (After Completion)"
+              beforeLabel="July 2000"
+              afterLabel="May 2006"
+            />
           </div>
         </div>
-
         <div className="flex flex-col items-center mt-12">
           {/* الخط */}
           <div className="w-full border-t-2 border-gray-300"></div>
