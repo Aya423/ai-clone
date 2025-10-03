@@ -121,13 +121,14 @@ export default function YangtzePage() {
 
             <div className="relative z-10">
               <p className="text-white font-merri tracking-wide leading-relaxed">
-                In 2000, satellite images showed the Yangtze River still flowing freely, with the Three Gorges Dam only
-                partly built and construction sites visible on the banks.
+               In 2000, Terra’s MODIS satellite images showed the Yangtze River still flowing freely, with the Three Gorges Dam only partly built and construction sites visible on the banks.
               </p>
               <p className="text-white font-merri mt-6 leading-relaxed">
-                By 2006, just six years later, the dam was complete, spanning the entire river. A massive reservoir had
-                formed behind it, replacing the narrow river channel with a wide, calm lake. The comparison highlights
-                how quickly the dam transformed the Yangtze River and its surroundings.
+                
+
+By 2006, just six years later, MODIS imagery revealed the dam complete, spanning the entire river. A massive reservoir had formed behind it, replacing the narrow river channel with a wide, calm lake.
+
+The MODIS comparison highlights how quickly the dam transformed the Yangtze River and its surroundings.
               </p>
             </div>
           </div>
