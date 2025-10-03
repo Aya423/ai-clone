@@ -80,9 +80,7 @@ export default function AmazonPage() {
       </section>
 
       <section className="container mx-auto max-w-7xl px-6 py-16">
-        <h2 className="font-oswald text-5xl font-bold text-center mb-12 text-black dark:text-foreground uppercase">
-          VEGETATION
-        </h2>
+        <h2 className="font-oswald text-5xl font-bold text-center mb-12 text-white uppercase">VEGETATION</h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
           <div
@@ -128,9 +126,7 @@ export default function AmazonPage() {
       </section>
 
       <section className="container mx-auto max-w-7xl px-6 pb-16 pt-8">
-        <h2 className="font-oswald text-5xl font-bold text-center mb-12 text-black dark:text-foreground uppercase">
-          FIRES
-        </h2>
+        <h2 className="font-oswald text-5xl font-bold text-center mb-12 text-white uppercase">FIRES</h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
           <div className="border-8 border-yellow-400 rounded-lg shadow-xl p-2 bg-yellow-50 flex w-full overflow-hidden">
@@ -190,9 +186,7 @@ export default function AmazonPage() {
             onMouseEnter={() => setHoveredBox("waterLevels")}
             onMouseLeave={() => setHoveredBox(null)}
           >
-            <h3 className="font-oswald text-2xl font-bold text-black dark:text-white mb-4 uppercase">
-              Record Low Water Levels
-            </h3>
+            <h3 className="font-oswald text-2xl font-bold text-white mb-4 uppercase">Record Low Water Levels</h3>
             <p className="text-gray-900 dark:text-white font-merri leading-relaxed mb-4">
               The Port of Manaus recorded a water level of 12.66 meters on October 4, 2024 - the lowest since records
               began in 1902. This severe drought is directly linked to deforestation and fires in the Amazon.
@@ -217,7 +211,7 @@ export default function AmazonPage() {
       </section>
 
       <section className="container mx-auto max-w-7xl px-6 py-16">
-        <h2 className="font-oswald text-5xl font-bold text-center mb-12 text-black dark:text-foreground -mt-8 uppercase">
+        <h2 className="font-oswald text-5xl font-bold text-center mb-12 text-white -mt-8 uppercase">
           HUMAN ACTIVITIES
         </h2>
 
