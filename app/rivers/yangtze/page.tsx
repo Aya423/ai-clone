@@ -50,7 +50,7 @@ export default function YangtzePage() {
       <section className="relative min-h-[60vh] w-full flex items-center justify-center overflow-hidden">
         <video className="absolute inset-0 w-full h-full object-cover" autoPlay loop muted playsInline>
           <source
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nilee-tmswqmyEXxpTqvJAwQpQxI18aEDU7R.mp4"
+            src="yangtze.mp4" 
             type="video/mp4"
           />
         </video>
@@ -104,7 +104,7 @@ export default function YangtzePage() {
           <div
             className="p-8 rounded-md flex flex-col w-full bg-cover bg-center relative overflow-hidden cursor-pointer"
             style={{
-              backgroundImage: "url('/images/dust-storm-nile.png')",
+              backgroundImage: "url('/images/dam.jpg')",
               transform:
                 hoveredBox === "From Sahara to the Nile" ? "translateZ(30px) scale(1.02)" : "translateZ(0) scale(1)",
               boxShadow:
