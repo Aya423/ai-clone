@@ -75,9 +75,18 @@ export default function NilePage() {
               world. Flowing entirely within China, it begins on the Tibetan Plateau and winds eastward through diverse
               landscapes before emptying into the East China Sea near Shanghai.For thousands of years, the Yangtze has
               nourished civilizations, serving as a vital route for transport, agriculture, and trade. Today, it remains
-              central to China’s economy and culture, but faces increasing pressures from industrialization, dams,
-              pollution, and climate change.
+              central to China's economy and culture, but faces increasing pressures from industrialization, dams,
+              pollution, and climate change.
             </p>
+          </div>
+
+          <div className="mt-8 flex justify-center">
+            <div className="bg-white/10 backdrop-blur-md rounded-lg px-6 py-4 shadow-xl border border-white/20">
+              <audio controls className="w-full max-w-md">
+                <source src="/audio/yangtze-river.mp3" type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+            </div>
           </div>
         </div>
       </section>
