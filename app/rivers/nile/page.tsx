@@ -66,15 +66,15 @@ export default function NilePage() {
               faces growing stress from rising temperatures, population demands, and climate change.
             </p>
           </div>
+        </div>
+      </section>
 
-          <div className="mt-8 flex justify-center">
-            <div className="bg-white/10 backdrop-blur-md rounded-lg px-6 py-4 shadow-xl border border-white/20">
-              <audio controls className="w-full max-w-md">
-                <source src="/audio/nile-river.mp3" type="audio/mpeg" />
-                Your browser does not support the audio element.
-              </audio>
-            </div>
-          </div>
+      <section className="container mx-auto max-w-7xl px-6 py-4">
+        <div className="w-full lg:w-1/2 mx-auto">
+          <audio controls className="w-full rounded-lg">
+            <source src="/audio/nile-river.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
         </div>
       </section>
 
