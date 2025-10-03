@@ -16,8 +16,8 @@ export default function ImageComparisonSlider({
   afterImage,
   beforeAlt = "Before",
   afterAlt = "After",
-  beforeLabel = "Mar 2022",
-  afterLabel = "May 2019",
+  beforeLabel = "May 2019",
+  afterLabel = "Mar 2022",
 }: ImageComparisonSliderProps) {
   const [sliderPosition, setSliderPosition] = useState(50)
   const [isDragging, setIsDragging] = useState(false)

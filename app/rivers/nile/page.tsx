@@ -227,13 +227,11 @@ export default function NilePage() {
           </div>
 
           <div className="border-8 border-yellow-400 rounded-lg shadow-xl p-2 bg-yellow-50 flex w-full min-h-[400px]">
-            <ImageComparisonSlider
-              beforeImage="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-10-03%20033242-9wPBkwLngrLJ1s2bePCByoAsruotw8.png"
-              afterImage="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-10-03%20033209-NncPvly1Xh2YXPlbp8p9mkP8upRBBO.png"
-              beforeAlt="Nile River Temperature Map - Before"
-              afterAlt="Nile River Temperature Map - After"
-            />
-          </div>
+  <ImageComparisonSlider
+    beforeImage="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-10-03%20033209-NncPvly1Xh2YXPlbp8p9mkP8upRBBO.png"
+    afterImage="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-10-03%20033242-9wPBkwLngrLJ1s2bePCByoAsruotw8.png"
+    beforeAlt="Nile River Temperature Map - After"
+    afterAlt="Nile River Temperature Map - Before" />
         </div>
       </section>
     </main>
